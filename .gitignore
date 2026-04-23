@@ -1,0 +1,52 @@
+# --- Gradle ---
+.gradle/
+build/
+**/build/
+
+# Gradle wrapper (оставляем только jar и properties)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# --- Kotlin / JVM ---
+*.class
+out/
+
+# --- Logs ---
+*.log
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE (IntelliJ / Android Studio) ---
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Но можно оставить code style / run configs при необходимости:
+#!.idea/codeStyles
+#!.idea/runConfigurations
+
+# --- Android (если есть) ---
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Keystore / sensitive ---
+*.jks
+*.keystore
+*.pem
+*.key
+
+# --- Kotlin Multiplatform / Native ---
+.konan/
+
+# --- Test / coverage ---
+coverage/
+jacoco.exec
+
+# --- Temporary ---
+*.tmp
+*.swp

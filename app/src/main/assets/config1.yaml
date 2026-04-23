@@ -1,0 +1,24 @@
+proxies:
+  - name: client-example-1
+    type: vless
+    server: 111.22.3.44
+    port: 443
+    uuid: xxxxxxxx-yyyy-yyyy-aaaa-exampleexample
+    network: tcp
+    tls: true
+    udp: true
+    servername: example.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xxxxxxxxyyyyyyyyaaaaexampleexample
+      short-id: exampleexample
+
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - client-example-1
+
+rules:
+  - MATCH,Proxy
